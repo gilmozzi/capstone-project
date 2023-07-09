@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Main Page (default)-->
+    <title>Wired</title>
+    <link rel="icon" href="images/logo.png">
+
+    <!-- defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--footer icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+
+    <!--typography: Raleway from Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation-->
+
+  <nav class="navbar-area">
+
+    <div class="site-navbar">
+      <!-- site logo -->
+      <a href="index.html" class="site-logo"><img src="images/logo.png" alt="logo"></a>
+
+      <!-- site menu/nav -->
+      <ul>
+        <li class="nav-list"><a href="promotion.php">PROMOTIONS</a></li>
+        <li class="nav-list"><a href="reservation.php">CONCESSIONS</a></li>
+        <li class="nav-list"><a href="parking.html">PARKING</a></li>
+        <li class="nav-list"><a href="social_feed.php">SOCIALIZE</a></li>
+        <li class="nav-list"><a href="about.html">ABOUT US</a></li>
+        <li class="nav-list"><a href="faq.php">NEED HELP?</a></li>
+
+        <li class="search-bar">
+          <a href="search_page.html"><img src="images/search-icon.png" style="width: 25px;"></a>
+        </li>
+        <li class="login-btn">
+          <a href="login.html" class="login-button"><p>Log In</p></a>
+        </li>
+
+      </ul>
+
+      <!-- nav-toggler for mobile version only -->
+      <button class="nav-toggler">
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+
+	<!-- top banner / main page -->
+  <section id="banner" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+
+		<div class="col-md-8">
+          <h1>Assembly Hall</h1>
+          <h4>Home of the Indiana Hoosiers.</h4>
+        </div>
+        <div class="col-md-4">
+          <img src="images/logo.png">
+        </div>
+      </div>
+	<!-- upcoming match preview / main page -->
+      <div class="row" id="upcoming-match">
+        <div class="col-md-4">
+          <h2>UPCOMING MATCHES</h2>
+        </div>
+
+        <div class="col-md-4">
+        </div>
+
+        <div class="col-md-4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- matching section -->
+  <section id="section1">
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <div class="col-md-5">
+
+          <div class="row">
+            <div class="col-md-7 d-flex align-items-center">
+
+              <div class="row" id="team-left-rank">
+                <h3><b>INDIANA UNIV.</b></h3>
+                <h4>RANK 02</h4>
+                <p><b>85%</b> WIN RATIO</p>
+              </div>
+
+            </div>
+
+            <div class="col-md-5" id="team-left-logo">
+              <img src="images/iu-logo.jpg">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-2" id="vs">
+          <img src="images/vs.png">
+
+        </div>
+
+        <div class="col-md-5">
+
+          <div class="row">
+            <div class="col-md-5" id="team-right-logo">
+              <img src="images/purdue-logo.png">
+            </div>
+
+            <div class="col-md-7 d-flex align-items-center">
+              <div class="row" id="team-right-rank">
+                <h3><b>PURDUE UNIV</b></h3>
+                <h4>RANK 09</h4>
+                <p>WIN RATIO <b>53%</b></p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+       </div>
+
+      <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8" id="match-date">
+          <h6>13:00PM on Feb 24th, 2021</h6>
+        </div>
+        <div class="col-md-2">
+          <button type="button" id="buy-ticket">BUY THE TICKET</button>
+        </div>
+      </div>
+
+  </div>
+  </section>
+
+  <div class="row" id="rewards">
+    <a href="rewards.php"><p>Want to get <span>FREE PRIZE?</span> GET <span>REWARDS!</span></p></a>
+  </div>
+
+  <!-- concession section -->
+  <section id="section2" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6" id="concession-img">
+            <img src="images/concession.png">
+        </div>
+        <div class="col-md-6" id="concession-info">
+            <div class="row">
+                <p class="concession-title">Still move your feet to get <span class="concession-food">FOOD?</span><span class="concession-order">&ensp;&ensp;Order a delivery!</span></p>
+            </div>
+            <div class="row" id="concession-btn">
+                <button class="concession-btn"><b><a href="reservation.php">Go to Concession Reservation</a></b></button>
+            </div>
+        </div>
+
+      </div>
+  </div>
+  </section>
+
+  <!-- parking section -->
+  <section id="section3" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-6" id="parking-here">
+          <p class="parking-title">CHOOSE YOUR <br> PARKING SPOT!</p>
+          <a href="parking.html" class="parking-btn1 parking-btn2"><span class="parking-span"></span> FIND AVAILABLE</a>
+        </div>
+        <div class="col-md-5" id="parking-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Message Board-->
+  <section id="section2" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6" id="msg-img">
+            <img src="images/qna.png">
+        </div>
+        <div class="col-md-6" id="msg-info">
+            <div class="row">
+                  <p class="msg-title">STAY UP TO DATE ON <br> <span>ANNOUNCMENTS!</span></p>
+            </div>
+            <div class="row" id="msg-btn">
+                <a href="message_board.php" class="msg-btn"><span>TALK TO US!</span></a>
+            </div>
+        </div>
+
+      </div>
+  </div>
+  </section>
+
+    <!--footer-->
+    <footer class ="footer-container" >
+      <div class="container" >
+        <div class="row">
+
+          <div class="col-md-6">
+
+            <h5>Wired &copy; 2020</h5>
+
+            <p>cgkang@iu.edu	&ensp; 812)351-0448 	&ensp; Bloomington, IN</p>
+
+          </div>
+
+          <div class="col-md-6">
+
+            <a href=""><i class="fa fa-facebook-square"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-github"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--navigation bar JavaScript-->
+    <script src="js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
