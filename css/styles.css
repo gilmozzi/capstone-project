@@ -1,0 +1,653 @@
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:root {
+  --red: #d30303;
+}
+
+ul {
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+/*
+  Typography
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap');  
+/*font-family: 'Ubuntu', sans-serif;*/
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif; 
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+/*
+  Banner
+*/
+
+
+#banner {
+  width: 100%;
+  height: 85vh;
+  background: url("stadium.jpg") top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: -100px;
+  z-index: -5;
+}
+
+#banner .container {
+  position: relative;
+  width: 60%;
+  top: -5%;
+}
+
+#banner h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#banner .container img {
+  width: 70%;
+  float: right;
+}
+
+#banner h4 {
+  color: #ffffff;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+#upcoming-match {
+  font-weight: bold;
+  color: rgb(219, 219, 219);    
+  padding-top: 50px;
+  margin-top: 50px;
+  margin-bottom: -200px;
+  text-shadow: 2px 2px #ffffff50;
+}
+
+#upcoming-match h4 {
+  font-weight: bold;
+  color: #7ba8b6; 
+  text-shadow: 2px 2px #ffffff50;
+}
+
+#rewards {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto ;
+  background-color: #e9e9e9;
+  padding: 20px;
+  transition: .5s;
+}
+
+#rewards p {
+  font-size: 30px;
+}
+
+#rewards a {
+  text-decoration: none;
+  color: #50727C;
+}
+
+#rewards span {
+  font-weight: bold;
+}
+
+#rewards:hover {
+  transform: translateY(-30px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.205);
+}
+
+
+#section1 {
+  margin-top: -150px;
+  width: 100%;
+}
+
+#section1 .container {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px 5px #00000027;
+  position: relative;
+  width: 60%;
+  padding: 50px 0;
+}
+
+#team-left-logo {
+  text-align: center;
+}
+
+#team-left-logo img {
+  width: 80%;
+}
+
+#vs {
+  text-align: center;
+}
+
+#vs img {
+  width: 40%;
+}
+
+#team-left-rank {
+  text-align: right;
+}
+
+#team-right-logo img {
+  width: 100%;
+}
+
+#team-left-rank h2{
+  font-weight: bold;
+}
+
+#team-right-rank h2{
+  font-weight: bold;
+}
+
+#buy-ticket {
+  color: white;
+  background-color: #50727C;
+  margin: 0;
+  padding: 10px 15px;
+  border-radius: 7px;
+}
+
+#match-date {
+  color: #6d6d6d;
+  text-align: center;
+  font-weight: bold;
+}
+
+#match-date h6{
+  font-weight: bold;
+}
+
+#section2 {
+  margin-top: 150px;
+  width: 100%;
+}
+
+#concession-img img {
+  width: 110%;
+}
+
+#section2 .container {
+  position: relative;
+  width: 60%;
+  height: 70vh;
+}
+
+#concession-info {
+  margin: auto 0 30px;
+}
+
+.concession-title {
+  font-size: 35px;
+}
+
+.concession-food {
+  color: #50727C;
+  font-weight: bold;
+}
+
+.concession-order {
+  font-weight: bold;
+  font-size: 30px;
+  color: #B5B5B5;
+}
+
+#concession-btn {
+  margin-top: 20px;
+  width: 70%;
+}
+
+#concession-btn a {
+  text-decoration: none;
+  color: #50727C;
+  transition: .5s;
+}
+
+#concession-btn a:hover {
+  color: white;
+}
+
+.concession-btn {
+  font-size: 17px;
+  border: 4px solid #50727C;
+  border-radius: 20px;
+  background-color: rgba(181, 181, 181, 0);
+  padding: 20px;
+  transition: 1s;
+  color: #50727C;
+}
+
+.concession-btn:hover {
+  box-shadow: -15px 10px 20px rgba(0, 0, 0, 0.37);
+  transform: translateX(70px);
+  transition: 1s;
+  background-color: #50727C;
+  color: white;
+}
+
+#section3 {
+  height: 80vh;
+  background: url("parking-section.png") top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#section3 img {
+  width: 180%;
+}
+
+#parking-here {
+  margin: auto 0;
+}
+
+.parking-title {
+  font-weight: bold;
+  font-size: 2.3rem;
+  color: #50727C;
+  margin-bottom: 50px;
+}
+
+a.parking-btn1 {
+  position: relative;    
+  color: rgb(129, 129, 129);    
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 2.5px;
+  padding: 20px 40px;
+  font-weight: bold;
+}
+
+a.parking-btn1::before, 
+a.parking-btn1::after, 
+.parking-span::before, 
+.parking-span::after{
+	content: '';
+    position: absolute;    
+    width: 10px;
+    height: 10px;
+    transition: 1s;
+}
+
+a.parking-btn1::before{
+	top: -0.5px;
+    left: -0.5px;
+    border-top: 3px #50727C solid;
+    border-left: 3px #50727C solid;
+}
+
+a.parking-btn1::after{
+	top: -0.5px;
+    right: -0.5px;
+    border-top: 3px #50727C solid;
+    border-right: 3px #50727C solid;
+} 
+
+.parking-span::before{
+	bottom: -0.5px;
+    left: -0.5px;
+    border-bottom: 3px #50727C solid;
+    border-left: 3px #50727C solid;
+} 
+
+.parking-span::after{
+	bottom: -0.5px;
+    right: -0.5px;
+    border-bottom: 3px #50727C solid;
+    border-right: 3px #50727C solid;
+}
+
+a.parking-btn1:hover{
+    color: #50727C;
+}
+
+a.parking-btn1:hover::before,
+a.parking-btn1:hover::after,
+a.parking-btn1:hover .parking-span::before,
+a.parking-btn1:hover .parking-span::after{
+    width: calc( 220px / 2 );
+    height: calc( 40px / 2 );
+}
+
+
+#msg-img img {
+  width: 500px;
+}
+
+#msg-info {
+  margin: auto;
+}
+
+.msg-title {
+  font-size: 2rem;
+  color: #B5B5B5;
+  margin-left: 50px;
+}
+
+.msg-title span {
+  font-size: 2.5rem;
+  color: #50727C;
+}
+
+#msg-btn {
+  margin: 20px 0 0 0;
+  width: 320px;
+  margin-left: 50px;
+}
+
+.msg-btn {
+  border-radius: 15px;
+  background-color:#50727C;
+  border: none;
+  padding: 15px;
+  width: 100px;
+  transition: all 0.5s;
+  border: 4px solid #ffffff00;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.37);
+}
+
+.msg-btn:hover {
+  background-color: white;
+  border: 4px solid #50727C;
+  box-shadow: none;
+}
+
+.msg-btn span {
+  font-size: 1.5rem;
+  color: white;
+  position: relative;
+  transition: 0.5s;
+}
+
+.msg-btn span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.msg-btn:hover span {
+  padding-right: 40px;
+  color: #50727C;
+  font-weight: bold;
+}
+
+.msg-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1645px) {
+
+  #banner .container {
+    width: 80%;
+  }
+
+  #section1 .container {
+    width: 80%;
+  }
+
+  #msg-img img {
+    width: 400px;
+  }
+
+  .msg-title {
+    margin-left: 100px;
+  }
+  
+  #msg-btn {
+    margin-left: 100px;
+  }
+
+  #rewards p {
+    font-size: 20px;
+  }
+
+}
+
+/* tablet breakpoint start */
+@media (min-width: 768px) and (max-width: 992px) {
+
+  #banner .container {
+    width: 100%;
+  }
+
+  #section1 .container {
+    width: 100%;
+  }
+
+  #msg-img img {
+    width: 280px;
+    margin: 0 0 20px -70px;
+  }
+  
+  .msg-title {
+    margin-left: 50px;
+    font-size: 1.3rem;
+  }
+  
+  .msg-title span {
+    font-size: 2rem;
+  }
+  
+  #msg-btn {
+    margin-left: 50px;
+    width: 280px;
+  }
+  
+  .msg-btn {
+    padding: 10px;
+  }
+  
+  .msg-btn span {
+    font-size: 1rem;
+  }
+
+  #rewards p {
+    font-size: 20px;
+  }
+
+
+}
+/* tablet breakpoint end */
+
+
+
+/* mobile breakpoint start */
+@media screen and (max-width: 768px) {
+
+  #banner .container {
+    width: 100%;
+  }
+
+  #banner {
+    text-align: center;
+  }
+
+  #banner h1 {
+    font-size: 30px;
+    margin: 4rem 0 1rem;
+    padding-top: 3rem;
+  }
+  
+  #banner .container img {
+    width: 40%;
+    float: none;
+  }
+  
+  #banner h4 {
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+
+  #upcoming-match {
+    margin-bottom: 0px;
+  }
+
+  #section1 .container {
+    width: 80%;
+  }
+
+  #team-left-rank {
+    text-align: center;
+    margin: auto;
+  }
+  #team-left-logo {
+    width: 50%;
+    margin: auto;
+  }
+
+  #vs {
+    width: 50%;
+    margin: 30px auto;
+  }
+
+  #team-right-logo {
+    width: 50%;
+    margin: auto;
+  }
+
+  #team-right-rank {
+    text-align: center;
+    margin: auto;
+  }
+
+  #buy-ticket {
+    margin-top: 30px;
+    margin-left: 30%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(53, 53, 53, 0.329);
+  }
+
+  #concession-img img {
+    width: 130%;
+    margin-bottom: 20px;
+  }
+
+  .concession-title {
+    font-size: 20px;
+  }
+  
+  .concession-food {
+    color: #50727C;
+    font-weight: bold;
+  }
+  
+  .concession-order {
+    font-weight: bold;
+    font-size: 15px;
+    color: #B5B5B5;
+  }
+
+  #concession-btn {
+    width: 100%;
+    padding: 10px 5px;
+  }
+
+  #concession-btn b {
+    font-size: 15px;
+  }
+
+  #section3 {
+    background-position: 60% 10%;
+  }
+
+  #parking-here {
+    width: fit-content;
+    margin: -100px auto 0;
+    box-shadow: 0 0 10px #414141;
+    padding: 40px;
+    background-color: #ffffff9c;
+  }
+
+  #msg-img img {
+    width: 280px;
+    margin: 0 0 20px 0;
+  }
+  
+  .msg-title {
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .msg-title span {
+    font-size: 2rem;
+  }
+  
+  #msg-btn {
+    margin-left: 0;
+    width: 280px;
+  }
+  
+  .msg-btn {
+    padding: 10px;
+  }
+  
+  .msg-btn span {
+    font-size: 1rem;
+  }
+
+  #rewards p {
+    font-size: 20px;
+  }
+}
+/* mobile breakpoint end */

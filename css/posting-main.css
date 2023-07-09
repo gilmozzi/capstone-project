@@ -1,0 +1,110 @@
+/* apply a natural box layout model to all elements */
+html {
+    box-sizing: border-box;
+  }
+  
+  body {    
+    position: relative;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  :root {
+    --red: #d30303;
+  }
+  
+  ul {
+    margin: 0;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .selector-for-some-widget {
+    box-sizing: content-box;
+  }
+  
+  /*
+    Typography
+  */
+  
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap');  
+  /*font-family: 'Ubuntu', sans-serif;*/
+  
+  h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif; 
+  }
+  
+  p {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+
+  .background {
+      background-color: rgb(235, 235, 235);
+  }
+
+  /*
+  Banner
+*/
+  .banner {
+    padding: 100px 0 0;
+    background-color: #50727C;
+    height: fit-content;
+  }
+
+  #page-title {
+    padding: 0 0 50px;
+    text-align: center;
+    color: #fff;
+  }
+
+#filter {
+
+    margin: auto;
+    width: 50%;
+  }
+
+  #filter-btn {
+    color: #fff;
+  }
+
+  #writing-btn img{
+    float: right;
+  }
+
+  #body-container {
+    height: 100vh;
+    width: 50%;
+  }
+
+  #sort-posts {
+    margin-top: 40px;
+    border-bottom: 2px solid #50727C;
+    margin-bottom: 10px;
+  }
+
+  #posts {
+    font-size: 13px;
+    border-bottom: 2px solid rgb(212, 212, 212);
+    margin-top: 10px;
+  }
+  
+  

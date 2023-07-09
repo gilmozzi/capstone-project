@@ -1,0 +1,206 @@
+/* apply a natural box layout model to all elements */
+html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    position: relative;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  :root {
+    --red: #d30303;
+  }
+  
+  ul {
+    margin: 0;
+  }
+  
+  /*
+    Typography
+  */
+  
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap');  
+  /*font-family: 'Ubuntu', sans-serif;*/
+  
+  h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif; 
+  }
+  
+  p {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+
+  
+  
+  /* 
+    Content
+  */
+
+
+.container {
+  margin: auto;
+}
+
+#row-container {
+  height: 80vh;
+}
+
+#welcome-logo .row {
+  text-align: center;
+  color: #50727C;
+}
+
+#welcome-logo img {
+  width: 65%;
+}
+
+
+#login-div {
+  border-left: 2px solid rgba(197, 197, 197, 0.575);
+}
+
+
+.login-form {
+    width: 65%;
+    height: 50%;
+    margin: 10px auto;
+}
+
+
+label[for="username"] {
+  color: #50727C;
+  font-size: 1rem;
+    font-weight: bold;
+}
+
+label[for="password"] {
+  color: #50727C;
+  font-size: 1rem;
+    font-weight: bold;
+}
+
+#txt {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: small;
+    color: #000000;
+}
+
+
+#txt:focus {
+    outline: none;
+}
+
+.fp {
+    color: #b1b1b1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+    transition: 0.3s;
+}
+
+.fp:hover {
+    color: #50727C;
+}
+
+.button-container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.button-container button {
+    padding: 5px 12px;
+    border: 2px solid #50727C;
+    border-radius: 5px;
+    transition: 0.3s;
+    float: right;
+    color: #50727C;
+}
+
+.button-container button:hover {
+    transform: scale(1.1);
+    background-color: #50727C;
+    color: white;
+}
+
+.button-container button a {
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: bold;
+}
+
+
+
+  @media (min-width: 992px) and (max-width: 1645px) {
+
+    .login-form {
+      width: 100%;
+    }
+    #welcome-logo img {
+      width: 80%;
+    }
+    .btn {
+      width: 40%;
+    }
+  }
+  
+  
+  /* tablet breakpoint start */
+  @media (min-width: 768px) and (max-width: 992px) {
+
+    #row-container {
+      width: 100%;
+    }
+
+    .login-form {
+      width: 150%;
+    }
+
+    #welcome-logo img {
+      width: 100%;
+    }
+  }
+  /* tablet breakpoint end */
+  
+  
+  
+  /* mobile breakpoint start */
+  @media screen and (max-width: 768px) {
+
+    #welcome-logo h2 {
+      margin-top: 40px;
+    }
+
+    #login-div {
+      margin: 0 auto 200px;
+    }
+
+    .btn {
+      width: 55%;
+    }
+  }
